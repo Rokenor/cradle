@@ -1,0 +1,31 @@
+.content {
+	position: relative;
+	display: block;
+
+	&__wrapper {
+		position: relative;
+		display: block;
+
+		width: 946px;
+		margin: 0 auto;
+
+
+	}
+
+	&__title {
+		position: relative;
+		display: block;
+
+		background: #638e9e;
+
+		color: #ffffff;
+
+		padding: 0 14px;
+
+		border-radius: 5px;
+	}
+	&__description {
+		color: #1b1b1a;
+		padding: 0 14px;
+	}
+}
