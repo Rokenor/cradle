@@ -1,31 +1,52 @@
 .content {
 	position: relative;
 	display: block;
-
 	&__wrapper {
 		position: relative;
 		display: block;
-
-		width: 946px;
+		width: 943px;
 		margin: 0 auto;
-
-
+		padding: 0 0 73px 0;
 	}
-
 	&__title {
 		position: relative;
 		display: block;
-
 		background: #638e9e;
-
+		font-family: PFDTCPL, serif;
+		font-size: 30px;
+		line-height: 44px;
 		color: #ffffff;
-
 		padding: 0 14px;
-
+		margin-top: 30px;
 		border-radius: 5px;
 	}
 	&__description {
+		font-family: CalibriI, serif;
+		font-size: 18px;
 		color: #1b1b1a;
-		padding: 0 14px;
+		padding: 15px 14px;
+	}
+	&__link {
+		font-family: CalibriIB, serif;
+		color: #1b1b1a;
+		text-decoration: none;
+	}
+	&__download {
+		position: relative;
+		display: block;
+		width: 143px;
+		height: 59px;
+		background: url('../img/btn_download.png') 0 0 no-repeat;
+		font-family: PFDTCPL, serif;
+		font-size: 30px;
+		line-height: 64px;
+		color: #ffffff;
+		text-decoration: none;
+		padding-left: 90px;
+		margin-left: 13px;
+
+		&:hover {
+			background-position: 0 -59px;
+		}
 	}
 }

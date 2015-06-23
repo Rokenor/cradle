@@ -2,7 +2,34 @@
 	position: relative;
 	display: block;
 
-	background: url('../img/blue_pattern.jpg') 0 0 repeat-x;
+	background: url('../img/blue_pattern.jpg') center 0 repeat-x;
 
 	height: 360px;
+	&__wrapper {
+		position: relative;
+		display: block;
+		width: 943px;
+		min-height: 252px;
+		margin: 0 auto;
+
+		background: url('../img/poster_main.jpg') 0 0 no-repeat;
+
+		&:before,
+		&:after {
+			position: absolute;
+			width: 31px;
+			height: 252px;
+			background: #000000;
+			opacity: 0.2;
+			content: '';
+		}
+		&:before {
+			top: 0;
+			left: -31px;
+		}
+		&:after {
+			top: 0;
+			right: -31px;
+		}
+	}
 }

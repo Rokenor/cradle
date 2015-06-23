@@ -1,3 +1,20 @@
+@font-face {
+  font-family: PFDTCP;
+  src: url(../fonts/PFDinTextCondPro-Regular.ttf);
+}
+@font-face {
+  font-family: PFDTCPL;
+  src: url(../fonts/pfdintextcondpro-light.ttf);
+}
+@font-face {
+  font-family: CalibriI;
+  src: url(../fonts/calibrii.ttf);
+}
+@font-face {
+  font-family: CalibriIB;
+  src: url(../fonts/calibriz.ttf);
+}
+
 html,
 body {
 	width: 100%;
@@ -5,5 +22,5 @@ body {
 }
 
 body {
-	background: url('../img/bg_pattern.jpg') 0 0 repeat;
+	background: url('../img/bg_pattern.jpg') center 0 repeat;
 }

@@ -1,16 +1,57 @@
 .footer {
 	position: relative;
 	display: block;
-
 	height: 78px;
 	border-bottom: 14px solid #000000;
-
-	background: url('../img/blue_pattern.jpg') 0 0 repeat;
+	background: url('../img/blue_pattern.jpg') center 0 repeat;
 	&__wrapper {
 		position: relative;
 		display: block;
-
-		width: 946px;
+		width: 943px;
+		height: 78px;
 		margin: 0 auto;
+		background: url('../img/bg_footer.jpg') 0 0 no-repeat;
+		&:before,
+		&:after {
+			position: absolute;
+			width: 31px;
+			height: 78px;
+			background: #000000;
+			opacity: 0.2;
+			content: '';
+		}
+		&:before {
+			top: 0;
+			left: -31px;
+		}
+		&:after {
+			top: 0;
+			right: -31px;
+		}
+	}
+	&__text {
+		font-family: CalibriI, serif;
+		font-size: 18px;
+		color: #dbdcca;
+		text-align: center;
+		padding: 15px 0;
+	}
+	&__logo {
+		position: absolute;
+		display: block;
+		top: 13px;
+		left: 13px;
+		width: 164px;
+		height: 42px;
+		background: url('../img/logo_footer.png') 0 0 no-repeat;
+	}
+	&__unigine {
+		position: absolute;
+		display: block;
+		top: 13px;
+		right: 13px;
+		width: 169px;
+		height: 34px;
+		background: url('../img/logo_unigine.png') 0 0 no-repeat;
 	}
 }

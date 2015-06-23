@@ -9,9 +9,11 @@
 	<div class="header">
 		<div class="header__wrapper">
 			<a class="header__logo" href="/"></a>
-			<a class="header__lang" href="">eng</a>
-			<a class="header__lang" href="">rus</a>
-			<a class="header__lang" href="">ukr</a>
+			<div class="header__switch">
+				<a class="header__lang" href="">eng</a>
+				<a class="header__lang active" href="">rus</a>
+				<a class="header__lang" href="">ukr</a>		
+			</div>
 		</div>
 	</div>
 	<div class="poster">
@@ -36,30 +38,40 @@
 			<h2 class="content__title">authors</h2>
 			<p class="content__description">Студия Flying Cafe for Semianimals основана в 2011 году в Киеве, Украина. Команда состоит из четырех человек: Евгений Литвинов, Роман Малинкин, Валентин Пархоменко и Илья Толмачев. На собъединяет потребность в создании эстетически изысканных интерактивных миров, наполненных глубоким гуманистическим содержанием.</p>
 			<h2 class="content__title">contacts</h2>
-			<p class="content__description">Медиа-поддержка и связь с общественностью &mdash; <a href="mailto:pr@flying-cafe.com">pr@flying-cafe.com</a><br />
-				Сотрудничество, продажи, издание игры &mdash; <a href="mailto:sales@flying-cafe.com">sales@flying-cafe.com</a><br />
-				Техподдержка &mdash; <a href="mailto:support@flying-cafe.com">support@flying-cafe.com</a></p>
+			<p class="content__description">Медиа-поддержка и связь с общественностью &mdash; <a class="content__link" href="mailto:pr@flying-cafe.com">pr@flying-cafe.com</a><br />
+				Сотрудничество, продажи, издание игры &mdash; <a class="content__link" href="mailto:sales@flying-cafe.com">sales@flying-cafe.com</a><br />
+				Техподдержка &mdash; <a class="content__link" href="mailto:support@flying-cafe.com">support@flying-cafe.com</a></p>
 			<h2 class="content__title">for press</h2>
 			<p class="content__description">Мы подготовили пакет материалов, которые вы можете использовать для оформления статей, публикации новостей и т.п., связанных с проектом Cradle. Скачать архив можно здесь:</p>
-			<a href="">Download</a>
+			<a class="content__download" href="http://flying-cafe.com/downloads/press_pack_cradle.zip" target="_blank">download</a>
 		</div>
 	</div>
 	<div class="share">
 		<div class="share__wrapper">
-			<p>
-				<span>Share</span>
-				<a href="">f</a>
-				<a href="">t</a>
-				<a href="">v</a>
-				<a href="">g</a>
-			</p>
+			<div class="share__content">
+				<span class="share__text">share:</span>
+				<!-- <a class="share__btn share__fb" href=""></a>
+				<a class="share__btn share__tw" href=""></a>
+				<a class="share__btn share__vk" href=""></a>
+				<a class="share__btn share__gp" href=""></a> -->
+				<script type="text/javascript">(function() {
+				  if (window.pluso)if (typeof window.pluso.start == "function") return;
+				  if (window.ifpluso==undefined) { window.ifpluso = 1;
+				    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+				    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+				    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+				    var h=d[g]('body')[0];
+				    h.appendChild(s);
+				  }})();</script>
+				<div class="pluso" data-background="transparent" data-options="medium,square,line,horizontal,nocounter,theme=04" data-services="facebook,twitter,vkontakte,google"></div>
+			</div>
 		</div>
 	</div>
 	<div class="footer">
 		<div class="footer__wrapper">
-			<a href=""></a>
-			<p>&copy; 2011 - 2015 Flying Cafe For Semianimals</p>
-			<a href=""></a>
+			<a class="footer__logo" href="/"></a>
+			<p class="footer__text">&copy; 2011 - 2015 Flying Cafe For Semianimals</p>
+			<a class="footer__unigine" href="http://unigine.com/" target="_blank" title="ungine"></a>
 		</div>
 	</div>
 </body>
