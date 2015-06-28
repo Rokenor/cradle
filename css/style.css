@@ -157,15 +157,11 @@ summary {
   src: url(../fonts/calibrii.ttf);
 }
 
-@font-face {
-  font-family: CalibriIB;
-  src: url(../fonts/calibriz.ttf);
-}
-
 html,
 body {
   width: 100%;
   height: 100%;
+  font-family: PFDTCPL, serif;
 }
 
 body {
@@ -350,6 +346,53 @@ body {
   right: -31px;
 }
 
+.poster__steam {
+  position: absolute;
+  display: block;
+  top: 225px;
+  left: 56px;
+  width: 409px;
+  height: 134px;
+  background: url("../img/bg_steam.png") 0 0 no-repeat;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.poster__steam:hover {
+  background-position: 0 -134px;
+}
+
+.poster__date {
+  position: absolute;
+  display: block;
+  font-family: PFDTCP, serif;
+  font-size: 44px;
+  line-height: 48px;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  margin: 52px 0 20px 20px;
+}
+
+.poster__date_lite {
+  display: block;
+  font-family: PFDTCPL, serif;
+  font-size: 26px;
+  line-height: 26px;
+  margin-top: -12px;
+}
+
+.poster__date_middle {
+  font-size: 40px;
+}
+
+.poster__date_ls {
+  letter-spacing: -1px;
+}
+
 .poster__info {
   position: absolute;
   display: block;
@@ -361,6 +404,7 @@ body {
   -webkit-border-bottom-right-radius: 15px;
   border-bottom-right-radius: 15px;
   top: 252px;
+  z-index: 1;
 }
 
 .poster__info:before,
@@ -381,6 +425,54 @@ body {
 .poster__info:after {
   right: -31px;
   background: url("../img/poster_right.png") 0 0 no-repeat;
+}
+
+.poster__social {
+  position: relative;
+  float: right;
+  margin: 7px 7px 0 0;
+}
+
+.poster__more {
+  position: relative;
+  float: left;
+  font-family: PFDTCPL, serif;
+  font-size: 28px;
+  line-height: 46px;
+  color: #dadbd1;
+  padding-right: 7px;
+}
+
+.poster__link {
+  position: relative;
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin-left: 7px;
+}
+
+.poster__link:hover {
+  background-position: 0 -45px;
+}
+
+.poster__fb {
+  background: url("../img/mi_fb.png") 0 0 no-repeat;
+}
+
+.poster__tw {
+  background: url("../img/mi_tw.png") 0 0 no-repeat;
+}
+
+.poster__vk {
+  background: url("../img/mi_vk.png") 0 0 no-repeat;
+}
+
+.poster__blog {
+  background: url("../img/mi_blog.png") 0 0 no-repeat;
+}
+
+.poster__yt {
+  background: url("../img/mi_youtube.png") 0 0 no-repeat;
 }
 
 .content {
@@ -418,8 +510,8 @@ body {
 }
 
 .content__link {
-  font-family: CalibriIB, serif;
-  color: #1b1b1a;
+  font-family: CalibriI, serif;
+  color: #0059b3;
   text-decoration: none;
 }
 
@@ -440,6 +532,47 @@ body {
 
 .content__download:hover {
   background-position: 0 -59px;
+}
+
+.content__container {
+  position: relative;
+  display: block;
+  padding: 0 14px;
+}
+
+.content__pic {
+  position: relative;
+  display: inline-block;
+  width: 228px;
+  margin-right: 8px;
+  vertical-align: top;
+}
+
+.content__pic_link {
+  position: relative;
+  display: block;
+  width: 228px;
+  height: 126px;
+  margin-bottom: 10px;
+}
+
+.content__pic_link:hover > .content__pic_blue {
+  display: block;
+}
+
+.content__pic_blue {
+  position: absolute;
+  display: none;
+  background: url("../img/hover_blue.png") -2px -2px no-repeat;
+  width: 228px;
+  height: 126px;
+}
+
+.content__video {
+  position: relative;
+  display: inline-block;
+  width: 674px;
+  background: #f0f0f0;
 }
 
 .share {
@@ -481,7 +614,7 @@ body {
 }
 
 .share__content {
-  font-family: PFDTCP, serif;
+  font-family: PFDTCPL, serif;
   font-size: 28px;
   line-height: 32px;
   color: #dadbd1;
@@ -493,28 +626,4 @@ body {
   display: inline-block;
   vertical-align: top;
   margin: 2px 10px 0 0;
-}
-
-.share__btn {
-  position: relative;
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  margin-right: 10px;
-}
-
-.share__fb {
-  background: url("../img/share_fb.png") 0 0 no-repeat;
-}
-
-.share__tw {
-  background: url("../img/share_tw.png") 0 0 no-repeat;
-}
-
-.share__vk {
-  background: url("../img/share_vk.png") 0 0 no-repeat;
-}
-
-.share__gp {
-  background: url("../img/share_gp.png") 0 0 no-repeat;
 }

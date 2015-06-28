@@ -27,8 +27,8 @@
 		padding: 15px 14px;
 	}
 	&__link {
-		font-family: CalibriIB, serif;
-		color: #1b1b1a;
+		font-family: CalibriI, serif;
+		color: #0059b3;
 		text-decoration: none;
 	}
 	&__download {
@@ -48,5 +48,40 @@
 		&:hover {
 			background-position: 0 -59px;
 		}
+	}
+	&__container {
+		position: relative;
+		display: block;
+		padding: 0 14px;
+	}
+	&__pic {
+		position: relative;
+		display: inline-block;
+		width: 228px;
+		margin-right: 8px;
+		vertical-align: top;
+		&_link {
+			position: relative;
+			display: block;
+			width: 228px;
+			height: 126px;
+			margin-bottom: 10px;
+			&:hover > .content__pic_blue {
+				display: block;		
+			}
+		}
+		&_blue {
+			position: absolute;
+			display: none;
+			background: url('../img/hover_blue.png') -2px -2px no-repeat;
+			width: 228px;
+			height: 126px;
+		}
+	}
+	&__video {
+		position: relative;
+		display: inline-block;
+		width: 674px;
+		background: #f0f0f0;
 	}
 }
