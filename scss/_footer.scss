@@ -53,5 +53,8 @@
 		width: 169px;
 		height: 34px;
 		background: url('../img/logo_unigine.png') 0 0 no-repeat;
+		&:hover {
+			background-position: 0 -34px;
+		}
 	}
 }

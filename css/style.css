@@ -310,6 +310,10 @@ body {
   background: url("../img/logo_unigine.png") 0 0 no-repeat;
 }
 
+.footer__unigine:hover {
+  background-position: 0 -34px;
+}
+
 .poster {
   position: relative;
   display: block;
@@ -353,7 +357,6 @@ body {
   left: 56px;
   width: 409px;
   height: 134px;
-  background: url("../img/bg_steam.png") 0 0 no-repeat;
   text-decoration: none;
   z-index: 2;
 }
@@ -362,35 +365,16 @@ body {
   background-position: 0 -134px;
 }
 
-.poster__date {
-  position: absolute;
-  display: block;
-  font-family: PFDTCP, serif;
-  font-size: 44px;
-  line-height: 48px;
-  color: #ffffff;
-  text-transform: uppercase;
-  -webkit-transform: rotate(-4deg);
-  -ms-transform: rotate(-4deg);
-  -o-transform: rotate(-4deg);
-  transform: rotate(-4deg);
-  margin: 52px 0 20px 20px;
+.poster__steam_en {
+  background: url("../img/steam_en.png") 0 0 no-repeat;
 }
 
-.poster__date_lite {
-  display: block;
-  font-family: PFDTCPL, serif;
-  font-size: 26px;
-  line-height: 26px;
-  margin-top: -12px;
+.poster__steam_ru {
+  background: url("../img/steam_ru.png") 0 0 no-repeat;
 }
 
-.poster__date_middle {
-  font-size: 40px;
-}
-
-.poster__date_ls {
-  letter-spacing: -1px;
+.poster__steam_ukr {
+  background: url("../img/steam_ukr.png") 0 0 no-repeat;
 }
 
 .poster__info {
@@ -553,7 +537,7 @@ body {
   display: block;
   width: 228px;
   height: 126px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .content__pic_link:hover > .content__pic_blue {
@@ -572,7 +556,8 @@ body {
   position: relative;
   display: inline-block;
   width: 674px;
-  background: #f0f0f0;
+  background: #000000;
+  padding: 12px 0;
 }
 
 .share {

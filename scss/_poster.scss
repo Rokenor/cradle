@@ -39,35 +39,19 @@
 		left: 56px;
 		width: 409px;
 		height: 134px;
-		background: url('../img/bg_steam.png') 0 0 no-repeat;
 		text-decoration: none;
 		z-index: 2;
 		&:hover {
 			background-position: 0 -134px;	
 		}
-	}
-	&__date {
-		position: absolute;
-		display: block;
-		font-family: PFDTCP, serif;
-		font-size: 44px;
-		line-height: 48px;
-		color: #ffffff;
-		text-transform: uppercase;
-		transform: rotate(-4deg);
-		margin: 52px 0 20px 20px;
-		&_lite {
-			display: block;
-			font-family: PFDTCPL, serif;
-			font-size: 26px;
-			line-height: 26px;
-			margin-top: -12px;
+		&_en {
+			background: url('../img/steam_en.png') 0 0 no-repeat;
 		}
-		&_middle {
-			font-size: 40px;
+		&_ru {
+			background: url('../img/steam_ru.png') 0 0 no-repeat;
 		}
-		&_ls {
-			letter-spacing: -1px;
+		&_ukr {
+			background: url('../img/steam_ukr.png') 0 0 no-repeat;
 		}
 	}
 	&__info {
